@@ -1,0 +1,22 @@
+name: Pokemon Data Pipeline
+on:
+  workflow_dispatch  # Allows manual executions
+
+jobs:
+  run_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4  # Checkout the repository
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.9"  
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Instalar dependencias
+    - name: Run Data Pipeline
+      run: |
+        python scripts/fetch_pokemon_data.py  # Obtener datos de la API
+        python scripts/load_to_duckdb.py     # Cargar datos en DuckDB
+        python scripts/query_database.py     # Consultar datos (opcional) 

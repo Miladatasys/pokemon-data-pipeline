@@ -1,0 +1,6 @@
+id,name,height,weight,base_experience,hp,attack,defense,special_attack,special_defense,speed,abilities,types
+132,ditto,3,40,101,48,48,48,48,48,48,"limber, imposter",normal
+25,pikachu,4,60,112,35,55,40,50,50,90,"static, lightning-rod",electric
+1,bulbasaur,7,69,64,45,49,49,65,65,45,"overgrow, chlorophyll","grass, poison"
+4,charmander,6,85,62,39,52,43,60,50,65,"blaze, solar-power",fire
+7,squirtle,5,90,63,44,48,65,50,64,43,"torrent, rain-dish",water

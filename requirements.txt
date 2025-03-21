@@ -1,0 +1,4 @@
+requests
+pandas
+duckdb
+great-expectations
